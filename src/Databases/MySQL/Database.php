@@ -24,7 +24,10 @@ class Database
     {
         if (!isset(self::$instance)) {
             // 載入 .env 設定檔
-            $dotenv = Dotenv::createImmutable(dirname(__DIR__, 3));
+            file_exists(dirname(__DIR__, 6) . '/.env')
+                ? $dotenv = Dotenv::createImmutable(dirname(__DIR__, 6))
+                : $dotenv = Dotenv::createImmutable(dirname(__DIR__, 3));
+
             $dotenv->load();
             // 額外的連線設定
             $options = [
