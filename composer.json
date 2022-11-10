@@ -1,0 +1,24 @@
+{
+    "name": "yveschiu/php_utils",
+    "description": "Some simple useful php util code snippets",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Yveschiu\\PhpUtils\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "yveschiu",
+            "email": "yves.s.c.chiu@gmail.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    },
+    "scripts": {
+        "post-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ]
+    }
+}
