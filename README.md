@@ -24,7 +24,7 @@ A singleton MySQL database object that can prevent multiple building multiple co
 
 ### Usage
 1. Configuration
-- Add these lines of the MySQL configuration in `.env` file. If no .env file in your project, A .env file should be generated from the .env.example
+- Add these lines of settings of the MySQL configuration in `.env` file in the project root.
 ```
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
