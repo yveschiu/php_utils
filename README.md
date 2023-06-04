@@ -1,5 +1,7 @@
 # About this repo
-A place to house some simple util classes and functions
+A place to house some simple util classes and functions.
+Not fully implemented.
+Just served as an example reference.
 
 ## How to use composer to install this tiny tool
 - Add the following lines to the composer.json file
@@ -20,7 +22,7 @@ A place to house some simple util classes and functions
 
 
 ## Databases
-A singleton MySQL database object that can prevent multiple building multiple connections within the execution of an app.
+A singleton MySQL database object that can prevent building multiple connections during the execution of the program.
 
 ### Usage
 1. Configuration
